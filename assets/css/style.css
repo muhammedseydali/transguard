@@ -144,6 +144,7 @@ h6 {
 
 #header .logo a {
   color: #fff;
+  display: block;
 }
 
 #header .logo a span {
@@ -152,6 +153,14 @@ h6 {
 
 #header .logo img {
   max-height: 40px;
+  display: block;
+  width: 100%;
+}
+
+@media all and (max-width: 640px){
+  #header .logo a{
+    width: 100px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -206,7 +215,7 @@ h6 {
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
@@ -340,7 +349,7 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
@@ -473,7 +482,7 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgb(117, 36, 167);
   width: fit-content;
-  padding: 10px;
+  padding: 0 10px;
   margin: 10px 0 0 0;
   font-size: 56px;
   font-weight: 700;
@@ -525,9 +534,17 @@ h6 {
   }
 }
 
+@media (max-width: 1024px) {
+  #hero h1,
+  #hero h2{
+    font-size: 35px;
+  }
+}
+
 @media (max-width: 768px) {
   #hero {
     height: auto;
+    margin-top: 50px;
   }
 
   #hero h1 {
@@ -536,8 +553,47 @@ h6 {
   }
 
   #hero h2 {
-    font-size: 20px;
+    font-size: 28px;
+    padding: 10px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+
+  #hero h1 {
+    font-size: 22px;
+  }
+
+  #hero h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #hero h1 {
+    font-size: 18px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+  }
+
+  .about .content h3 {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 360px) {
+
+  #hero h1 {
+    font-size: 14px;
+  }
+
+  #hero h2 {
+    font-size: 14px;
+    padding: 5px 10px;
   }
 }
 
