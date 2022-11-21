@@ -677,11 +677,15 @@ section {
   margin-bottom: 0;
 }
 
+.about-main-container {
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .clients .swiper-slide img {
@@ -716,7 +720,7 @@ section {
 # Features
 --------------------------------------------------------------*/
 .features {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .features .icon-box {

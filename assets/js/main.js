@@ -15,6 +15,16 @@ $(document).ready(function(){
   
 });
 
+$(document).ready(function(){
+  $(".owl-carousel-two").owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items: 3,
+  });
+  
+});
+
 (function() {
   "use strict";
 
