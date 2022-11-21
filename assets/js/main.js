@@ -101,6 +101,19 @@ $(document).ready(function(){
     onscroll(document, headerScrolled)
   }
 
+  let selectNavItem = select('#navLink')
+  if (selectNavItem) {
+    const naveItemScrolled = () => {
+      if (window.scrollY > 100) {
+        selectNavItem.classList.add('nav-item-scrolled')
+      } else {
+        selectNavItem.classList.remove('nav-item-scrolled')
+      }
+    }
+    window.addEventListener('load', naveItemScrolled)
+    onscroll(document, naveItemScrolled)
+  }
+
   /**
    * Back to top button
    */
