@@ -134,7 +134,8 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#header .logo {
+#header .logo,
+#footer .logo {
   font-size: 32px;
   margin: 0;
   padding: 0;
@@ -144,7 +145,12 @@ h6 {
   text-transform: uppercase;
 }
 
-#header .logo a {
+#footer .logo {
+  margin-bottom: 15px;
+}
+
+#header .logo a,
+#footer .logo a {
   color: #fff;
   display: block;
 }
@@ -153,14 +159,17 @@ h6 {
   color: #ffc451;
 }
 
-#header .logo img {
+#header .logo img,
+#footer .logo img {
   max-height: 40px;
   display: block;
-  width: 100%;
+  /* width: 100%; */
+  margin: 0 auto;
 }
 
 @media all and (max-width: 640px){
-  #header .logo a{
+  #header .logo a,
+  #footer .logo a{
     width: 100px;
   }
 }
@@ -649,6 +658,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+#about {
+  margin-top: 50px;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -721,6 +733,29 @@ section {
 --------------------------------------------------------------*/
 .features {
   padding-top: 40px;
+  text-align: center;
+}
+
+.feature-title h1{
+  font-weight: 700;
+}
+
+.feature-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-content p{
+  font-weight: 600;
+}
+
+.feature-content-image-container{
+  width: 180px;
+  margin: 0 auto;
+}
+.feature-content-image-container img{
+  width: 100%;
+  display: block;
 }
 
 .features .icon-box {
@@ -766,6 +801,7 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
   width: 100%;
+  /* background-image: url('../img/Alarm-response.png'); */
 }
 
 .services .icon-box .icon {
@@ -1256,6 +1292,8 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  height: calc(100vw/5);
+  width: 100%;
 }
 
 .team .member .social {
@@ -1527,7 +1565,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: black;
-  padding: 0 0 30px 0;
+  padding: 0 0 30px;
   color: #fff;
   font-size: 14px;
 }
@@ -1535,11 +1573,15 @@ section {
 #footer .footer-top {
   background: #151515;
   border-bottom: 1px solid #222222;
-  padding: 60px 0 30px 0;
+  padding: 30px 0;
+}
+
+#footer .footer-top .row {
+  justify-content: center;
 }
 
 #footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 #footer .footer-top .footer-info h3 {
