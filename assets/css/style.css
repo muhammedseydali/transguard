@@ -804,6 +804,26 @@ section {
   /* background-image: url('../img/Alarm-response.png'); */
 }
 
+.overlay-white {
+  background-color: rgb(93, 93, 93);
+  /* opacity: 0.5; */
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.service-box-content{
+  /* z-index: 10; */
+  position: relative;
+}
+
+.service-box-inner-content{
+  z-index: 10;
+}
+
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
