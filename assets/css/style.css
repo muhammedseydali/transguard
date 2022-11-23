@@ -833,8 +833,21 @@ section {
 
 .service-box-inner-content p {
   color: #000;
+  background-color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0px 10px;
+  border-radius: 4px;
 }
 
+.service-box-inner-content h4 {
+  color: #000;
+  background-color: white;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
