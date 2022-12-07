@@ -1343,7 +1343,6 @@ section {
 }
 
 .team .member .member-info span {
-  display: block;
   font-size: 13px;
   font-weight: 400;
   color: #aaaaaa;
@@ -1361,10 +1360,28 @@ section {
   bottom: 15px;
 }
 
-#myBtn {
-  /* margin-top: 20px; */
-  /* margin-left: 10px; */
+
+.team .align-items-flex-start{
+  align-items: flex-start;
 }
+
+.team button {
+  margin-top: 15px;
+  display: block;
+  background-color: #7263cb;
+  color: #ebdfdf;
+  border: none;
+  outline: none;
+  padding: 3px 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.more{
+  display: none;
+}
+
 
 /*--------------------------------------------------------------
 # Contact

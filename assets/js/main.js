@@ -61,7 +61,7 @@ $(document).ready(function(){
    */
   let navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200
+    let position = window.scrollY + 0
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
       let section = select(navbarlink.hash)
@@ -320,64 +320,15 @@ $(document).ready(function(){
 
 })()
 
-
-    function myFunctionOne() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-    
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
-        moreText.style.display = "inline";
-      }
-    }
-    function myFunctionTwo() {
-      var dots = document.getElementById("dotsTwo");
-      var moreText = document.getElementById("moreTwo");
-      var btnText = document.getElementById("myBtnTwo");
-    
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
-        moreText.style.display = "inline";
-      }
-    }
-    function myFunctionThree() {
-      var dots = document.getElementById("dotsThree");
-      var moreText = document.getElementById("moreThree");
-      var btnText = document.getElementById("myBtnThree");
-    
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
-        moreText.style.display = "inline";
-      }
-    }
-    function myFunctionFour() {
-      var dots = document.getElementById("dotsFour");
-      var moreText = document.getElementById("moreFour");
-      var btnText = document.getElementById("myBtnFour");
-    
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
-        moreText.style.display = "inline";
-      }
-    }
+$(document).ready(function(){
+  $(".read").click(function(){
+     $(this).prev().toggle();
+     $(this).siblings('.dots').toggle();
+     if($(this).text()=='read less'){
+ $(this).text('read more');
+     }
+     else{
+ $(this).text('read less');
+     }
+  });
+});
