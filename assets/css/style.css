@@ -148,6 +148,7 @@ img {
 
 #footer .logo {
   margin-bottom: 15px;
+  width: 200px;
 }
 
 #header .logo a,
@@ -1224,7 +1225,7 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
-  height: calc(100vw/5);
+  /* height: calc(100vw/5); */
   width: 100%;
 }
 
@@ -1318,6 +1319,11 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+#contact {
+  padding-bottom: 60px;
+}
+
 .contact .info {
   width: 100%;
   background: #fff;
@@ -1782,6 +1788,15 @@ section {
 
   .counts .image img {
     max-width: 80%;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    background-color: black;
+  }
+
+  .navbar ul {
+    display: none;
   }
 }
 
