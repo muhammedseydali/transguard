@@ -238,9 +238,6 @@ img {
   color: rgba(177, 104, 222, 0.86);
 }
 
-.nav-item-scrolled{
-  color: #fff;
-}
 
 .navbar .dropdown ul {
   display: block;
@@ -1687,21 +1684,67 @@ section {
   }
 }   
 
-
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
+@media (max-width: 360px) {
+  
+  #hero h1 {
+    font-size: 14px;
+  }
+  
+  #hero h2 {
+    font-size: 14px;
+    padding: 5px 10px;
   }
 }
 
-@media (max-width: 1024px) {
-  #hero h1,
-  #hero h2{
-    font-size: 35px;
+@media (max-width: 480px) {
+  
+  #hero h1 {
+    font-size: 18px;
+  }
+  
+  #hero h2 {
+    font-size: 18px;
+  }
+  
+  .about .content h3 {
+    font-size: 20px !important;
   }
 }
 
+@media (max-width: 540px) {
+
+  #hero h1 {
+    font-size: 22px;
+  }
+
+  #hero h2 {
+    font-size: 22px;
+  }
+}
+
+
+@media all and (max-width: 640px){
+  #header .logo a,
+  #footer .logo a{
+    width: 100px;
+  }
+  .feature-content-image-container{
+    width: 100%;
+  }
+  
+  .feature-content {
+    flex-direction: column;
+  }
+  .feature-content-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 667px) {
+  .counts .image img {
+    max-width: 100%;
+  }
+}
 
 @media (max-width: 768px) {
   #hero {
@@ -1725,59 +1768,9 @@ section {
   }
 }
 
-@media all and (max-width: 640px){
-  #header .logo a,
-  #footer .logo a{
-    width: 100px;
-  }
-  .feature-content-image-container{
-    width: 100%;
-  }
-  
-  .feature-content {
-    flex-direction: column;
-  }
-  .feature-content-container {
-    width: 100%;
-  }
-}
-
-@media (max-width: 540px) {
-
-  #hero h1 {
-    font-size: 22px;
-  }
-
-  #hero h2 {
-    font-size: 22px;
-  }
-}
-
-
-@media (max-width: 480px) {
-
-  #hero h1 {
-    font-size: 18px;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-  }
-
-  .about .content h3 {
-    font-size: 20px !important;
-  }
-}
-
-@media (max-width: 360px) {
-
-  #hero h1 {
-    font-size: 14px;
-  }
-
-  #hero h2 {
-    font-size: 14px;
-    padding: 5px 10px;
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
   }
 }
 
@@ -1785,29 +1778,29 @@ section {
   .counts .image {
     text-align: center;
   }
-
+  
   .counts .image img {
     max-width: 80%;
   }
-
+  
   .mobile-nav-toggle {
     display: block;
     background-color: black;
   }
-
+  
   .navbar ul {
     display: none;
   }
 }
-
-@media (max-width: 667px) {
-  .counts .image img {
-    max-width: 100%;
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
   }
 }
 
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
+@media (max-width: 1024px) {
+  #hero h1,
+  #hero h2{
+    font-size: 35px;
   }
 }
